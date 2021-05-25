@@ -9,11 +9,13 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "api": "cd api && npm start",
     "client": "cd client && serve -s build",
-    "heroku-postbuild": "cd ./api && npm install && cd ../client && npm install",
-    "start": "concurrently \"npm run client\" \"npm run api\""
+    "client2": "cd client && npm run build",
+    "herok1u-postbuild": "cd ./api && npm install && cd ../client && npm install",
+    "star2t": "concurrently \"npm run api\" \"npm run client2\"",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": ""
 }
