@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd api && npm start",
     "server": "cd client && npm start",
-    "heroku-postbuild": "cd ./api && npm install && cd ../client && npm install && npm start",
+    "heroku-postbuild": "cd ./api && npm install && cd ../client && npm install && cd .. && npm start",
     "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": ""
