@@ -1,0 +1,18 @@
+{
+  "name": "react_express_app_medium_tutorial",
+  "version": "1.0.0",
+  "description": "- This repository has the code to support a tutorial that I created on Medium called Create a React FrontEnd, a Node/Express BackEnd and connect them together.\r - This repository can also be used as a starting point (boilerplate), if you whant to create your own React/Express app.\r .",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd api && npm start",
+    "server": "cd client && npm start",
+    "heroku-postbuild": "cd ./api && npm install && cd ../client && npm install && npm start",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": ""
+}
