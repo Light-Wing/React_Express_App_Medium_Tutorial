@@ -4,7 +4,8 @@
   "description": "- This repository has the code to support a tutorial that I created on Medium called Create a React FrontEnd, a Node/Express BackEnd and connect them together.\r - This repository can also be used as a starting point (boilerplate), if you whant to create your own React/Express app.\r .",
   "main": "index.js",
   "dependencies": {
-    "concurrently": "^6.2.0"
+    "concurrently": "^6.2.0",
+    "serve": "^11.3.2"
   },
   "devDependencies": {},
   "scripts": {
